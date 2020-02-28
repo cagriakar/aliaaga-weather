@@ -5,15 +5,15 @@
 }
 
 html {
-  background-color: #0042e8;
-  background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
+  background-color: #eeb462;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
 }
 
 .App {
   max-width: 100vw;
   max-height: 100vh;
-  background-color: #0042e8;
-  background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
+  background-color: #eeb462;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
 }
 
 .Header {
@@ -29,7 +29,7 @@ html {
   box-shadow: 8px 10px 15px -6px rgba(158, 158, 158, 1);
   background: white;
   border-radius: 10px;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .link:hover {
@@ -42,7 +42,7 @@ html {
   background: white;
   padding: 1rem 1rem;
   border-radius: 10px;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .hour {
