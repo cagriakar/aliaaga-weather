@@ -1,38 +1,66 @@
-.App {
+* {
+  box-sizing: border-box;
   text-align: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  background-color: #0042e8;
+  background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App {
+  max-width: 100vw;
+  max-height: 100vh;
+  background-color: #0042e8;
+  background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Header {
+  padding: 1rem;
+  color: white;
+  font-family: "Montserrat";
+}
+
+.weather-row {
+  border: 1px solid rgba(158, 158, 158, 0.5);
+  box-shadow: 8px 10px 15px -6px rgba(158, 158, 158, 1);
+  background: white;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.hour {
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-size: 20px;
+}
+img {
+  max-width: 30px;
+  max-height: 30px;
+}
+.real-feel {
+  font-family: "Source Sans Pro";
+  color: grey;
+  font-size: 13px;
+}
+.header-info {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.additional-info {
+  font-family: "Source Sans Pro";
+  color: grey;
+  font-size: 10px;
+}
+
+.footer p {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 1.2rem;
 }
