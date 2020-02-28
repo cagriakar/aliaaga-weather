@@ -1,15 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
-import { getWeather } from "../calls/weatherCall";
+import { getWeatherTomorrow } from "../calls/weatherCall";
 import { Container } from "react-bootstrap";
 import WeatherRow from "./WeatherRow";
 
-function HourlyWeatherCard() {
+function WeatherContainerTomorrow() {
   const [hoursList, setHoursList] = useState([]);
 
   const componentIsMounted = useRef(true);
 
   useEffect(() => {
-    getWeather()
+    getWeatherTomorrow()
       .then(response => {
         componentIsMounted.current && setHoursList(response);
       })
@@ -19,7 +19,6 @@ function HourlyWeatherCard() {
     };
   }, []);
   console.log(hoursList);
-
   return (
     <Container className="px-auto mx-auto">
       {hoursList.map((hour, index) => (
@@ -29,4 +28,4 @@ function HourlyWeatherCard() {
   );
 }
 
-export default HourlyWeatherCard;
+export default WeatherContainerTomorrow;

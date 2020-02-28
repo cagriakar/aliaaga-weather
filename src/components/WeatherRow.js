@@ -7,7 +7,7 @@ function WeatherRow({ data }) {
       <Col xs={12} lg={6}>
         <Row>
           <Col xs={3} sm={3} className="hour px-0">{`${data.hour} : 00`}</Col>
-          <Col xs={5} sm={3}>
+          <Col xs={4} sm={3}>
             <Row>
               <Col className="px-0">
                 <img
@@ -21,15 +21,11 @@ function WeatherRow({ data }) {
               <Col className="real-feel">{data.realFeel}</Col>
             </Row>
           </Col>
-          <Col xs={4} sm={6}>
-            <Row>
-              <Col md className="header-info">
-                {data.description}
-              </Col>
-              <Col md className="header-info py-2">
-                {data.precip}
-              </Col>
-            </Row>
+          <Col xs={3} sm={3} className="header-info px-0">
+            {data.description}
+          </Col>
+          <Col xs={2} sm={3} className="header-info px-0 py-2">
+            {data.precip}
           </Col>
         </Row>
       </Col>

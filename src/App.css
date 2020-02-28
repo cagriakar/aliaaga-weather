@@ -19,7 +19,7 @@ html {
 .Header {
   padding: 1rem;
   color: white;
-  font-family: "Montserrat";
+  font-family: "Titillium Web";
 }
 
 .weather-row {
@@ -32,7 +32,7 @@ html {
 }
 
 .hour {
-  font-family: "Source Sans Pro";
+  font-family: "Titillium Web";
   font-weight: 700;
   font-size: 20px;
 }
@@ -41,19 +41,19 @@ img {
   max-height: 30px;
 }
 .real-feel {
-  font-family: "Source Sans Pro";
-  color: grey;
+  font-family: "Titillium Web";
+  color: rgb(56, 56, 56);
   font-size: 13px;
 }
 .header-info {
-  font-family: "Source Sans Pro";
+  font-family: "Titillium Web";
   font-weight: 400;
   font-size: 15px;
 }
 
 .additional-info {
-  font-family: "Source Sans Pro";
-  color: grey;
+  font-family: "Titillium Web";
+  color: rgb(56, 56, 56);
   font-size: 10px;
 }
 
