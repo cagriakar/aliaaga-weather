@@ -31,11 +31,55 @@ function WeatherRow({ data }) {
       </Col>
       <Col xs={12} lg={6}>
         <Row className="py-3">
-          <Col className="additional-info px-1">{data.wind}</Col>
-          <Col className="additional-info px-1">{data.highWind}</Col>
-          <Col className="additional-info px-1">{data.moisture}</Col>
-          <Col className="additional-info px-1">{data.cloud}</Col>
-          <Col className="additional-info px-1">{data.rain}</Col>
+          <Col xs className="px-0">
+            <Col
+              className="additional-info px-1"
+              style={{ textDecoration: "underline" }}
+            >
+              {data.wind.substr(0, 6)}
+            </Col>
+            <Col className="additional-info px-1">{data.wind.substr(8)}</Col>
+          </Col>
+          <Col xs className="px-0">
+            <Col
+              className="additional-info px-1"
+              style={{ textDecoration: "underline" }}
+            >
+              {data.highWind.substr(0, 18)}
+            </Col>
+            <Col className="additional-info px-1">
+              {data.highWind.substr(20)}
+            </Col>
+          </Col>
+          <Col xs className="px-0">
+            <Col
+              className="additional-info px-1"
+              style={{ textDecoration: "underline" }}
+            >
+              {data.moisture.substr(0, 3)}
+            </Col>
+            <Col className="additional-info px-1">
+              {data.moisture.substr(5)}
+            </Col>
+          </Col>
+          <Col xs className="px-0">
+            <Col
+              className="additional-info px-1"
+              style={{ textDecoration: "underline" }}
+            >
+              {data.cloud.substr(0, 16)}
+            </Col>
+            <Col className="additional-info px-1">{data.cloud.substr(18)}</Col>
+          </Col>
+          <Col xs className="px-0">
+            <Col
+              className="additional-info px-1"
+              style={{ textDecoration: "underline" }}
+            >
+              {data.rain.substr(0, 6)}
+            </Col>
+            <Col className="additional-info px-1">{data.rain.substr(8)}</Col>
+          </Col>
         </Row>
       </Col>
     </Row>

@@ -7,12 +7,8 @@ import EventIcon from "@material-ui/icons/Event";
 import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
 
-let today = new Date();
-let tomorrow = new Date();
 let otherDay = new Date();
-
-tomorrow.setDate(today.getDate() + 1);
-otherDay.setDate(tomorrow.getDate() + 1);
+otherDay.setDate(otherDay.getDate() + 1);
 
 function Navigate() {
   const [value, setValue] = React.useState(0);
@@ -25,6 +21,7 @@ function Navigate() {
     <Container className="nav my-2">
       <BottomNavigation showLabels="true" value={value} onChange={handleChange}>
         <BottomNavigationAction
+          classes={{ root: "date-picker", selected: "date-selected" }}
           className="link"
           label="Today"
           value="today"
