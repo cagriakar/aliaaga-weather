@@ -1,11 +1,12 @@
 import React from "react";
+import "./App.css";
 import WeatherContainerToday from "./components/WeatherContainerToday";
 import WeatherContainerTomorrow from "./components/WeatherContainerTomorrow";
 import WeatherContainerOtherDay from "./components/WeatherContainerOtherDay";
 import Header from "./components/Header";
-import Navigate from "./components/Navigate";
+import NavigateTop from "./components/NavigateTop";
+import NavigateBottom from "./components/NavigateBottom";
 import Footer from "./components/Footer";
-import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
     <Router>
       <div className="App">
         <Header></Header>
-        <Navigate></Navigate>
+        <NavigateTop></NavigateTop>
         <Switch>
           <Route path="/" exact component={WeatherContainerToday}></Route>
           <Route
@@ -27,6 +28,7 @@ function App() {
             component={WeatherContainerOtherDay}
           ></Route>
         </Switch>
+        <NavigateBottom></NavigateBottom>
         <Footer></Footer>
       </div>
     </Router>

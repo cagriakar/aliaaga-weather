@@ -35,6 +35,15 @@ html {
   max-height: 70px;
 }
 
+.nav-bottom {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  bottom: 10px; /* Required  */
+}
+
 .nav {
   display: flex;
   justify-content: center;

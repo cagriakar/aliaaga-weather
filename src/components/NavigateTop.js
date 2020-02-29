@@ -10,7 +10,7 @@ import { Container } from "react-bootstrap";
 let otherDay = new Date();
 otherDay.setDate(otherDay.getDate() + 1);
 
-function Navigate() {
+function NavigateTop() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -18,7 +18,7 @@ function Navigate() {
   };
 
   return (
-    <Container className="nav my-2">
+    <Container className="nav nav-top my-2">
       <BottomNavigation showLabels="true" value={value} onChange={handleChange}>
         <BottomNavigationAction
           classes={{ root: "date-picker", selected: "date-selected" }}
@@ -50,4 +50,4 @@ function Navigate() {
   );
 }
 
-export default Navigate;
+export default NavigateTop;
