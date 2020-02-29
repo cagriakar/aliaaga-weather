@@ -5,10 +5,6 @@ import { Container } from "react-bootstrap";
 function Header() {
   return (
     <Container className="Header mt-2">
-      <div className="header-left-panel">
-        <LocationOnOutlinedIcon className="mb-2 mx-2"></LocationOnOutlinedIcon>
-        <h5>Aliağa</h5>
-      </div>
       <div className="header-right-panel">
         <img
           alt="sunny"
@@ -26,6 +22,10 @@ function Header() {
           alt="rainy"
           src="https://www.amcharts.com/wp-content/themes/amcharts4/css/img/icons/weather/animated/rainy-6.svg"
         ></img>
+      </div>
+      <div className="header-left-panel">
+        <LocationOnOutlinedIcon className="mb-2 mx-2"></LocationOnOutlinedIcon>
+        <h5>Aliağa</h5>
       </div>
     </Container>
   );

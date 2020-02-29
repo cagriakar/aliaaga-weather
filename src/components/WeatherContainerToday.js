@@ -3,7 +3,7 @@ import { getWeatherToday } from "../calls/weatherCall";
 import { Container } from "react-bootstrap";
 import WeatherRow from "./WeatherRow";
 
-function WeatherContainer() {
+function WeatherContainerToday() {
   const [hoursList, setHoursList] = useState([]);
 
   const componentIsMounted = useRef(true);
@@ -28,4 +28,4 @@ function WeatherContainer() {
   );
 }
 
-export default WeatherContainer;
+export default WeatherContainerToday;
