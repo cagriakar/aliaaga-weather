@@ -10,7 +10,7 @@ import { Container } from "react-bootstrap";
 let otherDay = new Date();
 otherDay.setDate(otherDay.getDate() + 1);
 
-function NavigateTop() {
+function Navigate() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -50,4 +50,4 @@ function NavigateTop() {
   );
 }
 
-export default NavigateTop;
+export default Navigate;
