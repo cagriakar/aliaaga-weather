@@ -23,7 +23,7 @@ function NavigateTop() {
         <BottomNavigationAction
           classes={{ root: "date-picker", selected: "date-selected" }}
           className="link"
-          label="Today"
+          label="Bugün"
           value="today"
           icon={<TodayIcon />}
           component={Link}
@@ -31,7 +31,7 @@ function NavigateTop() {
         ></BottomNavigationAction>
         <BottomNavigationAction
           className="link"
-          label="Tomorrow"
+          label="Yarin"
           value="tomorrow"
           icon={<CalendarTodayIcon />}
           component={Link}

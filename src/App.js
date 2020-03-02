@@ -4,8 +4,7 @@ import WeatherContainerToday from "./components/WeatherContainerToday";
 import WeatherContainerTomorrow from "./components/WeatherContainerTomorrow";
 import WeatherContainerOtherDay from "./components/WeatherContainerOtherDay";
 import Header from "./components/Header";
-import NavigateTop from "./components/NavigateTop";
-import NavigateBottom from "./components/NavigateBottom";
+import Navigate from "./components/Navigate";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -14,7 +13,7 @@ function App() {
     <Router>
       <div className="App">
         <Header></Header>
-        <NavigateTop></NavigateTop>
+        <Navigate></Navigate>
         <Switch>
           <Route path="/" exact component={WeatherContainerToday}></Route>
           <Route
@@ -28,7 +27,7 @@ function App() {
             component={WeatherContainerOtherDay}
           ></Route>
         </Switch>
-        <NavigateBottom></NavigateBottom>
+        <Navigate></Navigate>
         <Footer></Footer>
       </div>
     </Router>
